@@ -1,0 +1,24 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+
+# VS Code editor settings
+.vscode/
+
+# C / C++ Debug symbols and compiled binaries
+*.dSYM/
+*.dSYM
+*.out
+*.exe
+app
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Java compiled files
+*.class
+*.jar
