@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "30 july",
+        "31 july",
+        "classworkcompilation"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
