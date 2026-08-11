@@ -6,49 +6,29 @@ struct Employee
 {
     int id;
     char name[50];
-    float basicSalary;
-    float hra;
-    float da;
-    float netSalary;
+    float salary;
 };
 
 int main()
 {
 
-    struct Employee *empPtr;
+    struct Employee emp1, emp2;
 
-    empPtr = (struct Employee *)malloc(sizeof(struct Employee));
+    emp1.id = 2;
+    strcpy(emp1.name, "John Doe");
+    emp1.salary = 50000.0;
 
-    if (empPtr == NULL)
-    {
-        printf("Memory allocation failed!\n");
-        return 1;
-    }
+    emp2.id = 3;
+    strcpy(emp2.name, "Jane Smith");
+    emp2.salary = 60000.0;
 
-    printf("--- Enter Employee Details ---\n");
-    printf("Enter Employee ID: ");
-    scanf("%d", &empPtr->id);
+    printf("Employee 1:\n");
+    printf("ID: %d\n", emp1.id);
+    printf("Name: %s\n", emp1.name);
+    printf("Salary: %.2f\n", emp1.salary);
 
-    printf("Enter Employee Name: ");
-    scanf(" %[^\n]s", empPtr->name);
-
-    printf("Enter Basic Salary: ");
-    scanf("%f", &empPtr->basicSalary);
-
-    empPtr->hra = empPtr->basicSalary * 0.20;
-    empPtr->da = empPtr->basicSalary * 0.15;
-    empPtr->netSalary = empPtr->basicSalary + empPtr->hra + empPtr->da;
-
-    printf("\n--- Employee Salary Slip ---\n");
-    printf("Employee ID   : %d\n", empPtr->id);
-    printf("Employee Name : %s\n", empPtr->name);
-    printf("Basic Salary  : %.2f\n", empPtr->basicSalary);
-    printf("HRA           : %.2f\n", empPtr->hra);
-    printf("DA            : %.2f\n", empPtr->da);
-    printf("Net Salary    : %.2f\n", empPtr->netSalary);
-
-    free(empPtr);
-    empPtr = NULL;
-
-    return 0;
+    printf("\nEmployee 2:\n");
+    printf("ID: %d\n", emp2.id);
+    printf("Name: %s\n", emp2.name);
+    printf("Salary: %.2f\n", emp2.salary);
 }
