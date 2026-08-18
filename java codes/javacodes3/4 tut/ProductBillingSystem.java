@@ -1,5 +1,3 @@
-package javacodes3.tutorial4;
-
 import java.util.Scanner;
 
 class Product {

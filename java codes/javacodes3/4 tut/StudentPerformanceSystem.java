@@ -1,5 +1,3 @@
-package javacodes3.tutorial4;
-
 import java.util.Scanner;
 
 // Student class containing attributes and evaluation logic

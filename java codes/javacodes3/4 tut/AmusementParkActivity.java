@@ -1,6 +1,4 @@
-package javacodes3.tutorial4;
 
-// Ride class to hold the ride details
 class Ride {
     int rideNumber;
     String rideName;

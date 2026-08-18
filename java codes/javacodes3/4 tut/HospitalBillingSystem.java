@@ -1,5 +1,3 @@
-package javacodes3.tutorial4;
-
 import java.util.Scanner;
 
 // Patient class to hold details and billing operations
