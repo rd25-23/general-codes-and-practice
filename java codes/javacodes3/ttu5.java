@@ -1,3 +1,5 @@
+package javacodes3;
+
 class Vehicle {
     void start() {
         System.out.println("The vehicle is starting...");
